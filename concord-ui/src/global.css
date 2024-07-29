@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: custom;
+  src: url('../src/assets/Roboto-Medium.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: custom, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.slider-animation {
+   animation: slider 800ms ease-in-out;
+   animation-fill-mode: forwards;
+}
+
+
+@keyframes slider {
+  0%{
+    left: -120px;
+  }
+  100%{
+    left: 0px;
+  }
+}
+
+.chat-box{
+   background: linear-gradient(#beb2df,#2b33a5,#bd3eab);
+}
+
+.message-box{
+   background-image: url('../src/assets/chat-backround.jpg');
+   background-position:center;
+   background-attachment: fixed;
+  }
+
+#box::-webkit-scrollbar{
+   background-color: transparent;
+}
+
+#box::-webkit-scrollbar-thumb{
+  display: none;
+}
+
+.chips{
+   transition: transform 650ms ease-in-out;
+}
+
+.chips:hover{
+   transform: scale(1.05);
+}
+
+.topic {
+  background: linear-gradient(#d6d2e0,#fcfcfd,#d6dae0);
+}
